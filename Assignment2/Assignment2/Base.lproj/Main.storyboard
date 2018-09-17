@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kRd-Ek-26W">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="zsN-u1-iWD">
+            <objects>
+                <navigationController id="kRd-Ek-26W" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fmA-U9-nhI">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="4s4-Lq-ec3" kind="relationship" relationship="rootViewController" id="8Ua-tU-43t"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bmh-JB-dbG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1370" y="-119"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="uGQ-J6-ck5">
+            <objects>
+                <viewController id="4s4-Lq-ec3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gwf-hN-dt0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7fF-Fs-JhL" userLabel="LoginView">
+                                <rect key="frame" x="50" y="223.5" width="275" height="220"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="EMAIL/MOBILE" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eCR-78-083" userLabel="Email/Mobile" customClass="RaisePlaceholder" customModule="RaisePlaceholder">
+                                        <rect key="frame" x="20" y="40" width="235" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="2x8-J3-JrH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="username"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="animationDuration">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="subjectColor">
+                                                <color key="value" red="0.90980392160000001" green="0.0" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="underLineColor">
+                                                <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="PASSWORD" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vae-vE-6JQ" customClass="RaisePlaceholder" customModule="RaisePlaceholder">
+                                        <rect key="frame" x="20" y="100" width="235" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Bzc-fm-8E3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="animationDuration">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="subjectColor">
+                                                <color key="value" red="0.90980392160000001" green="0.0" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="underLineColor">
+                                                <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zag-2q-2gw">
+                                        <rect key="frame" x="20" y="160" width="235" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Ewc-Ri-xTj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" red="0.33333334329999997" green="0.33333334329999997" blue="0.33333334329999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="eCR-78-083" secondAttribute="trailing" constant="20" id="2sm-4A-ChM"/>
+                                    <constraint firstItem="eCR-78-083" firstAttribute="leading" secondItem="7fF-Fs-JhL" secondAttribute="leading" constant="20" id="JUq-hG-pXv"/>
+                                    <constraint firstItem="eCR-78-083" firstAttribute="top" secondItem="7fF-Fs-JhL" secondAttribute="top" constant="40" id="SpR-rA-BI8"/>
+                                    <constraint firstAttribute="trailing" secondItem="zag-2q-2gw" secondAttribute="trailing" constant="20" id="YrA-oo-2c6"/>
+                                    <constraint firstItem="zag-2q-2gw" firstAttribute="leading" secondItem="7fF-Fs-JhL" secondAttribute="leading" constant="20" id="ZtI-ey-GXd"/>
+                                    <constraint firstItem="vae-vE-6JQ" firstAttribute="top" secondItem="eCR-78-083" secondAttribute="bottom" constant="20" id="aDG-4q-omU"/>
+                                    <constraint firstAttribute="bottom" secondItem="zag-2q-2gw" secondAttribute="bottom" constant="20" id="aRa-TH-ZNk"/>
+                                    <constraint firstAttribute="height" constant="220" id="k2u-qS-Ivf"/>
+                                    <constraint firstAttribute="trailing" secondItem="vae-vE-6JQ" secondAttribute="trailing" constant="20" id="kMX-41-iKj"/>
+                                    <constraint firstItem="vae-vE-6JQ" firstAttribute="leading" secondItem="7fF-Fs-JhL" secondAttribute="leading" constant="20" id="oYU-7J-hta"/>
+                                </constraints>
+                            </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8D2-vo-d3X">
+                                <rect key="frame" x="95" y="609" width="185" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Login"/>
+                                    <segment title="Signup"/>
+                                </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.40784313729999999" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7fF-Fs-JhL" firstAttribute="centerY" secondItem="gwf-hN-dt0" secondAttribute="centerY" id="S5P-w9-YNe"/>
+                            <constraint firstItem="7fF-Fs-JhL" firstAttribute="leading" secondItem="yeM-FY-mKe" secondAttribute="leading" constant="50" id="eiV-cB-TB7"/>
+                            <constraint firstItem="7fF-Fs-JhL" firstAttribute="centerX" secondItem="gwf-hN-dt0" secondAttribute="centerX" id="uhZ-zp-Qan"/>
+                            <constraint firstItem="yeM-FY-mKe" firstAttribute="trailing" secondItem="7fF-Fs-JhL" secondAttribute="trailing" constant="50" id="xTT-B3-M2p"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yeM-FY-mKe"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cym-Lp-j0K"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ix9-45-0WP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-608.79999999999995" y="-117.39130434782609"/>
+        </scene>
+    </scenes>
+</document>
